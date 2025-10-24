@@ -2,14 +2,13 @@
 
 namespace BlockLibrary\Cms;
 
-use IteratorAggregate;
 use Kirby\Cms\Structure;
 use Kirby\Toolkit\Str;
 
 /**
  *  * @extends \Kirby\Cms\Items<\BlockLibrary\Cms\BlockLibraryItem>
  */
-class BlockLibrary extends Structure implements IteratorAggregate
+class BlockLibrary extends Structure
 {
     public const ITEM_CLASS = BlockLibraryItem::class;
 
