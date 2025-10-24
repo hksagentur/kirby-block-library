@@ -1,0 +1,10 @@
+type: select
+label:
+  *: hksagentur.blockLibrary.field.reusableBlock.label
+help:
+  *: hksagentur.blockLibrary.field.reusableBlock.help
+options:
+  type: query
+  query: site.blocks.toBlockLibrary
+  value: "{{ item.id }}"
+  text: "{{ item.name }} ({{ item.block.type }})"

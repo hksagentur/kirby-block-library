@@ -1,0 +1,37 @@
+{
+  "name": "hksagentur/kirby-block-library",
+  "description": "Easily integrate a reusable block library into your Kirby site",
+  "type": "kirby-plugin",
+  "license": "ISC",
+  "authors": [
+    {
+      "name": "Daniel Weidner",
+      "email": "d.weidner@hks-agentur.de",
+      "homepage": "https://hks-agentur.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BlockLibrary\\": "src/"
+    }
+  },
+  "require": {
+    "getkirby/composer-installer": "^1.2"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.25"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "scripts": {
+    "format": "pint --verbose",
+    "lint": "pint --verbose --test"
+  },
+  "extra": {
+    "installer-name": "block-library"
+  }
+}

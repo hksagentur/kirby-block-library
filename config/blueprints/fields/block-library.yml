@@ -1,0 +1,25 @@
+type: structure
+label:
+  *: hksagentur.blockLibrary.field.blockLibrary.label
+help:
+  *: hksagentur.blockLibrary.field.blockLibrary.help
+fields:
+  name:
+    type: text
+    label:
+      *: hksagentur.blockLibrary.field.blockLibrary.name.label
+    required: true
+  id:
+    type: slug
+    label:
+      *: hksagentur.blockLibrary.field.blockLibrary.id.label
+    icon: key
+    sync: name
+    required: true
+  block:
+    type: blocks
+    label:
+      *: hksagentur.blockLibrary.field.blockLibrary.block.label
+    required: true
+    max: 1
+batch: true
