@@ -1,7 +1,5 @@
 name:
   *: hksagentur.blockLibrary.block.fromLibrary.name
 icon: book
-preview: fields
-wysiwyg: true
 fields:
   block: @hksagentur/block-library/fields/reusable-block
