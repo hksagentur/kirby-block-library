@@ -19,6 +19,7 @@
     "getkirby/composer-installer": "^1.2"
   },
   "require-dev": {
+    "getkirby/cms": "^5.3",
     "laravel/pint": "^1.25"
   },
   "config": {
@@ -32,6 +33,7 @@
     "lint": "pint --verbose --test"
   },
   "extra": {
-    "installer-name": "block-library"
+    "installer-name": "block-library",
+    "kirby-cms-path": false
   }
 }
